@@ -1,0 +1,36 @@
+We explored QLoRA-based fine-tuning for English→Spanish translation using the OPUS Books dataset.
+
+We started with general LLMs (TinyLlama, mT5) but ran into instability and incorrect outputs, so we switched to FLAN-T5-small, which is an instruction-tuned seq2seq model better suited for translation.
+
+We implemented QLoRA using 4-bit quantization and LoRA adapters (targeting q/v attention layers), and trained on subsets of the dataset (initially 2000 samples, later scaled to 8000).
+
+We evaluated performance using BLEU score and qualitative translation examples.
+
+Baseline performance was around BLEU ≈ 5–7 depending on sample size. After QLoRA fine-tuning:
+
+small dataset (2000 samples): slight improvement (~+0.1 BLEU)
+larger dataset (8000 samples): slight degradation (~−0.18 BLEU)
+
+Qualitatively, some grammatical improvements occurred, but outputs often remained inconsistent or degraded (repetition, incorrect word choice).
+
+Conclusion: QLoRA did not significantly improve translation quality for this model/task, and in some cases reduced performance. This suggests parameter-efficient fine-tuning may not be sufficient for smaller models or moderate dataset sizes in translation tasks.
+
+What insight did we gain?
+
+QLoRA restricts training to low-rank updates in a subset of parameters. While this is efficient, translation is a highly structured task requiring consistent grammatical, syntactic, and lexical transformations. These may require broader parameter updates than LoRA provides.
+
+QloRA accidentally FUSED other languages into one another one data set we ran go this as an output for english to spanish "Maintenant partons" which is FRENCH.
+
+BLEU score provides a quantitative metric, but does not fully capture translation quality, especially for stylistic or literary text.
+
+Training required careful stabilization (e.g., disabling FP16, lowering learning rate, removing evaluation during training), highlighting the sensitivity of QLoRA-based fine-tuning.
+
+QLoRA provides significant memory and compute savings, but this comes at the cost of reduced adaptability for complex tasks such as translation.
+
+Model architecture significantly impacted results. General-purpose causal LLMs performed poorly, while instruction-tuned seq2seq models (FLAN-T5) provided stable baselines.
+
+The experimental process involved iterative debugging and refinement, demonstrating the importance of systematic experimentation in machine learning workflows.
+
+Increasing dataset size did not improve performance, suggesting that the limitation lies in model adaptation capacity rather than data availability.
+
+Parameter-efficient fine-tuning methods like QLoRA are not universally effective and may be unsuitable for tasks requiring precise, structured generation such as translation.

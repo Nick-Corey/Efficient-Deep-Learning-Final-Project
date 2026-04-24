@@ -1,0 +1,140 @@
+{
+  "model_id": "google/flan-t5-small",
+  "method": "QLoRA",
+  "sources": [
+    "Kitty, on the contrary, was more active than usual and even more animated.",
+    "All necessary preparations shall be made for your return.",
+    "Maintenant partons, allons, allons vers Sion.",
+    "Thursday, Aug.",
+    "\"Richelieu\"",
+    "If you do not take pains to know what is most necessary for a Christian, then what can interest you?",
+    "Did you not think him dreadful low-spirited when he was at Barton?",
+    "The Nautilus was stationary. It was floating next to an embankment shaped like a wharf.",
+    "\"Evidently it is; and now there is no reason why there should not be seas and continents in the interior of the earth.\"",
+    "\"The letter shall be given to himself.\"",
+    "\"So,\" he said to me, \"the castaways built a third ship on Vanikoro Island, and to this day, nobody knows where it went and perished?\"",
+    "\"I think as master does,\" Conseil replied, \"and it's extremely possible that after crossing every sea on the globe, Captain Nemo will bid the three of us a fond farewell.\"",
+    "When the four-verst steeplechase was beginning she leaned forward, and did not take her eyes off Vronsky while he went up to his horse and mounted it, and at the same time she heard her husband's repulsive, unceasing voice.",
+    "\"Sometimes that may happen; some of these woods become true anthracites; but others, such as this, have only gone through the first stage of fossil transformation.",
+    "The magnificent constellations of the southern sky shone resplendently.",
+    "I likewise taught him to say Master; and then let him know that was to be my name: I likewise taught him to say Yes and No and to know the meaning of them.",
+    "\"At these words he blew a whistle; the globe of fire which lighted the room reascended and disappeared. I found myself again in complete darkness.",
+    "If he had but been able to look to a distance, and see how what they call the spirit of the age was tending!",
+    "\"With whom is he, then?\"",
+    "I confess, not at all,\" replied Pencroft, \"and the wound which the dugong had in its side, a wound which seemed to have been made with a sharp instrument; that can't be understood, either.\""
+  ],
+  "references": [
+    "Kitty, al contrario, estaba más activa a incluso más animada que nunca.",
+    "Se darán las órdenes necesarias para su regreso.",
+    "¡Demasiado larga ha sido ya la pausa! ¡Adelante!",
+    "Jueves 20 de agosto.",
+    "Richelieu»",
+    "Si no tratas de saber lo que más importancia tiene para un cristiano, ¿cómo puede interesarte lo demás? –dijo el padre, levantándose–.",
+    "¿No le pareció terriblemente desanimado cuando estaba en Barton?",
+    "El Nautilus estaba inmovilizado cerca de una orilla dispuesta como el malecón de un muelle.",
+    "—Evidentemente, y siendo así, no hay nada que se oponga a la existencia de mares o de campiñas en el interior del globo.",
+    "La carta le será entregada personalmente.",
+    "-Así que se ignora todavía dónde fue a acabar el tercer navío, construido por los náufragos en la isla de Vanikoro, ¿no es así?",
+    "-Yo pienso como el señor -dijo Conseil-, y es muy posible que tras haber recorrido todos los mares del Globo, el capitán Nemo nos dé el vuelo a los tres.",
+    "Al empezar la carrera de cuatro verstas con obstáculos, Ana se inclinó hacia adelante sin quitar los ojos de Vronsky, que en aquel momento se acercaba a la yegua y montaba. A la vez oía la voz de su marido, aquella voz repulsiva que hablaba sin parar.",
+    "—A veces ocurre eso. Hay maderas de éstas que se convierten en verdaderas antracitas; pero otras, como las que ves, no han experimentado aún más que un principio de fosilización.",
+    "En el cielo austral brillaban magníficas constelaciones; en el cenit resplandecía con luz purísima la espléndida Antares del Escorpión y no lejos la Beta del Centauro, que se supone es la estrella más cercana del globo terrestre.",
+    "También le enseñé a decir amo, y le hice saber que ese sería mi nombre. Le enseñé a decir sí y no, y a comprender el significado de estas palabras.",
+    "Tras estas palabras, silbó; el globo de llama que iluminaba mi habitación subió y desapareció; volví a encontrarme en la oscuridad.",
+    "Si hubiese sabido mirar más lejos hubiera comprendido lo que exigía eso que se llama el espíritu de los tiempos.",
+    "Pues, ¿con quién entonces?",
+    "–No, confieso que no lo he comprendido –contestó Pencroff–, ni tampoco la herida que el dugongo tenía en el costado y que parecía hecha con un instrumento cortante."
+  ],
+  "baseline_predictions": [
+    "Kitty, en el contrario, fue más activo que el habitado y incluso más animated.",
+    "Todos los preocupaciones necesarios se han realizado para vuestro regreso.",
+    "Y ahora partemos, aguas, aguas versión.",
+    "Seora, Aug.",
+    "\"Richelieu\"",
+    "Si no tenemos acerca de acercar lo que es más necesario para un cristiano, entonces lo que puede interesar?",
+    "No creo que él es el dreadful agua cuando era en Barton?",
+    "El Nautilus fue trabajando en el agua en una embankmente formada como el agua.",
+    "\"En realidad es; y ahora no hay razón por qué no hay sas y continentes en el interior del tierra.\"",
+    "\"La carta será dado a s mismo.\"",
+    "- Por qué, yo dijo me: \"Las castaways han construido una tercera en el Island de Vanikoro, y a este da, ninguna sabe en qué da, no sabe en",
+    "\"Y creo que el maestro hace,\" el Consejo respondió, \"y es muy posible que después de traer cada mercado en el mundo, el Capt. Nemo vaya a los tres de nosotros un",
+    "Cuando el tráfico de vieras es empezando en el principio y no tena sus ojos de Vronsky mientras a su trabajo y montaa, y en el mismo tiempo",
+    "\"A veces que se pueden hacer; algunas de estos bosques se convirtan realmente anthracitos; pero algunos, como estos, han pasado a la primera etapa de transformación fossila.",
+    "Las magnficas constellationes del salido del salido se saban resplendentemente.",
+    "Pero también le haba enseado a dicir Master; y entonces le haba saber que sera mi nombre: y le haba enseado a dicir No y No y a saber el significado de",
+    "Y en estos palabras fueron una cámara; el globo de fuerza que llamado el cámara regresó y después. Y encontraron a vez en la luz completa.",
+    "Si saba encontrar a una difcil, y vera cómo llegaron el espritu de la edad!",
+    "Con cuyo es he, entonces?",
+    "Mientras, no a todos\", dijo Pencroft, \"y el hombre que el dugong tena en su tierra, un hombre que pareca haber sido haciendo con un instrumento sharpe; eso no puede comprend"
+  ],
+  "finetuned_predictions": [
+    "Kitty, en el contrario, fue más activo que el habitado y incluso más animated.",
+    "Todas las preparaciones necesarias se han realizado para vuestra regresión.",
+    "Y ahora partemos, allons, allons versión de Sión.",
+    "Seora, Aug.",
+    "\"Richelieu\"",
+    "Si no tenemos obras para saber lo que es más necesario para un cristiano, entonces lo que puede interesar?",
+    "No creo que él es difcil difcil cuando estaba en Barton?",
+    "El Nautilus fue trabajando en el ejemplo en una embankmente formada como el ejemplo.",
+    "Y ahora no hay razón para que no hay sntomas y continentes en el interior del mundo.",
+    "El escrito será dado a s mismo.",
+    "Y aqu, dijo me: \"Las castaways construyó un tercer en el Island de Vanikoro, y a este da, no saba en qué da, no saba en qué da?",
+    "\"Y creo que el maestro es eléctrico,\" el Consejo respondió, \"y es muy posible que después de traer cada mercado en el mundo, el Capt. Nemo espera a",
+    "Cuando el tráfico de la tráfica es encontrará en el ao y no tuviera sus ojos en Vronsky, y en el mismo tiempo se escuchado a su",
+    "Y algunas de ellos se pueden hacer, algunas de estas obras se encuentras verdaderamente anthracitos; pero otros, como esto, sólo han pasado en la primera etapa de transforma",
+    "Las magnficas del cielo del sntomas se saban resplendentemente.",
+    "Y también le haba enseado decir el Master; y entonces le haba saber que era mi nombre: y le haba enseado decir el No y No y decir el significado de ellos",
+    "En estas palabras, el mundo de agua que encuentra a la habitación resuelógica y encuentra en el da completo.",
+    "Si saba aqu, y vera cómo se llama la espritu de la edad!",
+    "Qué es he, entonces?",
+    "Y no saba, y el sntomo que el dugong haba en su tierra, un sntomo que pareca haber sido haciéndose con un instrumento rápido; no puede comprender"
+  ],
+  "baseline_bleu": {
+    "score": 6.639058556402083,
+    "counts": [
+      140,
+      46,
+      15,
+      5
+    ],
+    "totals": [
+      399,
+      379,
+      359,
+      339
+    ],
+    "precisions": [
+      35.08771929824562,
+      12.137203166226913,
+      4.178272980501393,
+      1.4749262536873156
+    ],
+    "bp": 0.9275691148439936,
+    "sys_len": 399,
+    "ref_len": 429
+  },
+  "finetuned_bleu": {
+    "score": 6.744219700547908,
+    "counts": [
+      141,
+      41,
+      15,
+      6
+    ],
+    "totals": [
+      366,
+      346,
+      326,
+      306
+    ],
+    "precisions": [
+      38.52459016393443,
+      11.84971098265896,
+      4.601226993865031,
+      1.9607843137254901
+    ],
+    "bp": 0.841868756910948,
+    "sys_len": 366,
+    "ref_len": 429
+  }
+}
